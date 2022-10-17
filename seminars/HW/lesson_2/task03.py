@@ -4,8 +4,9 @@
 #
 # - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
 
+
 def main(n):
-    dict_res = {round((1 + 1 / i) ** i, 2) for i in range(1, n + 1)}
+    dict_res = {round((1 + 1 / i) ** i, 3) for i in range(1, n + 1)}
     return dict_res
 
 
